@@ -94,7 +94,7 @@ ai71/
 To run the application locally:
 
 ```
-uvicorn ai71.main:app --reload
+uvicorn main:app --reload
 ```
 
 The API will be available at `http://localhost:8000`.
