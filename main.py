@@ -10,16 +10,16 @@ import logging
 import logging.config
 import json
 # import redis.asyncio as redis
-from .dialogue_management.manager import DialogueManager
-from .api import AI71API, OpenAIAPI
-from .database import (
+from dialogue_management.manager import DialogueManager
+from api import AI71API, OpenAIAPI
+from database import (
     SessionLocal, init_db, Curriculum, User, UserProfile, Achievement,
     UserAchievement, UserEngagement, Environment, Recommendation
 )
-from .gamification.system import GamificationSystem
-from .peer_matching.matcher import PeerMatcher
-from .academica.environment_generator import Academica
-from .models import (
+from gamification.system import GamificationSystem
+from peer_matching.matcher import PeerMatcher
+from academica.environment_generator import Academica
+from models import (
     CurriculumData, CurriculumOptimizationInput, ChallengeRequest,
     UserProfileCreate, UserProfileResponse, AchievementCreate,
     UserAchievementResponse, UserEngagementResponse,
@@ -27,8 +27,8 @@ from .models import (
     PeerMatchingRequest, EnvironmentGenerationRequest, ImageGenerationRequest,
     EnvironmentCreate, Environment as EnvironmentModel, AITutorRequest
 )
-from .recommender_system.recommender import ResourceRecommender
-from .element_lab.element_gen import JSElementGenerator
+from recommender_system.recommender import ResourceRecommender
+from element_lab.element_gen import JSElementGenerator
 from datetime import datetime
 
 
